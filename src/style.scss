@@ -1,0 +1,64 @@
+body {
+  background: #f2e2ce;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.map-of-regions {
+  position: relative;
+  .list-of-regions {
+    list-style: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 40px;
+    .region-card {
+      display: none;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      padding: 0;
+      &.on {
+        display: flex;
+      }
+      .region-image {
+        width: 100px;
+        height: 100px;
+        &.rounded-start {
+          border-radius: 0.25rem 0 0 0.25rem;
+        }
+      }
+      .region-content {
+        padding: 10px;
+        .title {
+          font-weight: 600;
+          &.fs-6 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  svg {
+    width: 100%;
+    display: block;
+    .region {
+      fill: #8c5423;
+      stroke: #ccc;
+      stroke-linejoin: round;
+      fill-rule: evenodd;
+      clip-rule: evenodd;
+      stroke-width: 1;
+      cursor: pointer;
+      transition: all 300ms;
+      &:hover {
+        fill: #a67449;
+      }
+      &.on {
+        fill: #733e1f;
+      }
+    }
+  }
+}

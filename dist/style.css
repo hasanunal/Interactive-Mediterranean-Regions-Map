@@ -1,0 +1,65 @@
+body {
+  background: #f2e2ce;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.map-of-regions {
+  position: relative;
+}
+.map-of-regions .list-of-regions {
+  list-style: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 40px;
+}
+.map-of-regions .list-of-regions .region-card {
+  display: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  padding: 0;
+}
+.map-of-regions .list-of-regions .region-card.on {
+  display: flex;
+}
+.map-of-regions .list-of-regions .region-card .region-image {
+  width: 100px;
+  height: 100px;
+}
+.map-of-regions .list-of-regions .region-card .region-image.rounded-start {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.map-of-regions .list-of-regions .region-card .region-content {
+  padding: 10px;
+}
+.map-of-regions .list-of-regions .region-card .region-content .title {
+  font-weight: 600;
+}
+.map-of-regions .list-of-regions .region-card .region-content .title.fs-6 {
+  font-size: 1rem;
+}
+.map-of-regions svg {
+  width: 100%;
+  display: block;
+}
+.map-of-regions svg .region {
+  fill: #8c5423;
+  stroke: #ccc;
+  stroke-linejoin: round;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-width: 1;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.map-of-regions svg .region:hover {
+  fill: #a67449;
+}
+.map-of-regions svg .region.on {
+  fill: #733e1f;
+}
