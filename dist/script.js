@@ -18,9 +18,9 @@ function addOnFromState(el) {
     const wordState = document.querySelector("[data-state='" + stateId + "']");
     wordState.classList.add("on");
     el.classList.add("on");
-    akdenizRegions();
+    mediterraneanRegions();
 }
-const akdenizRegions = function () {
+const mediterraneanRegions = function () {
     generalRegions.addEventListener('mousemove', (event) => {
         regionsCards.style.top = event.clientY + -120 + 'px';
         regionsCards.style.left = event.clientX + 20 + 'px';
