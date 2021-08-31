@@ -1,8 +1,8 @@
-# interactive-Akdeniz-Region-map
-Turkey Akdeniz Region svg map
+# interactive-Mediterranean-Region-map
+Turkey Mediterranean Region svg map
 
 ### Screen Shot
-![Turkey Akdeniz Region svg map](https://github.com/hasanunal/interactive-Akdeniz-Region-map/blob/main/screen-shot.png?raw=true)
+![Turkey Mediterranean Region svg map](https://github.com/hasanunal/interactive-Akdeniz-Region-map/blob/main/screen-shot.png?raw=true)
 
 ---
 
